@@ -10,7 +10,7 @@ Listas de exercícios e trabalhos das disciplinas de algoritmos do curso de Ciê
 | [04-filas](04-filas) | Filas | Fila dinâmica (`FilaDin`) e simulação de fila de aviões |
 | [05-listas-encadeadas](05-listas-encadeadas) | Lista dinâmica encadeada | Consultas por matrícula e por posição |
 | [06-listas-duplamente-encadeadas](06-listas-duplamente-encadeadas) | Lista duplamente encadeada | Remoção com reajuste dos ponteiros `ant` e `prox` |
-| [08-arvore-binaria](08-arvore-binaria) | Árvore binária de busca | Inserção, remoção e percursos |
+| [08-arvore-binaria](08-arvore-binaria) | Árvore binária de busca | Inserção, remoção e percurso em pré-ordem |
 | [09-arvore-avl](09-arvore-avl) | Árvore AVL | Balanceamento por rotações |
 | [trabalho-simulador-sistema-de-arquivos](trabalho-simulador-sistema-de-arquivos) | Árvores (trabalho) | Terminal que simula um sistema de arquivos em árvore, com comandos e caminhos |
 | [ordenacao-externa](ordenacao-externa) | Ordenação externa (Python) | Merge sort externo: divide em blocos que cabem na memória, ordena e intercala com heap |
