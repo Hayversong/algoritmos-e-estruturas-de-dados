@@ -309,7 +309,7 @@ void comando_list(No *no_atual) {
 
 void comando_exit(No *raiz) {
     printf("encerrando o programa. Liberando memoria...\n");
-    liberar_arvore(raiz);// Libera toda a árvore
+    liberar_arvore(raiz);// Libera toda a Ã¡rvore
     printf("memoria liberada. encerrado!\n");
     exit(0);
 }

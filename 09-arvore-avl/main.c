@@ -3,11 +3,11 @@
 #include "ArvoreAVL.h"
 
 int main(){
-    /*A primeira ·rvore È uma AVL, pois todos os nÛs possuem sub·rvores cuja diferenÁa de altura n„o ultrapassa 1
-     A segunda tambÈm È uma AVL, pois embora mais complexa, todos os nÛs mantÍm o balanceamento, como no caso do nÛ 60, cujos filhos (58 e 88) tÍm alturas 2 e 1,
-     diferenÁa ainda v·lida.
-     A terceira ·rvore È apenas um nÛ È uma AVL por definiÁ„o.
-     A terceira ·rvore n„o È uma AVL, pois o nÛ 14 tem a sub·rvore esquerda com altura 2 (13 -> 15) e a direita nula.
+    /*A primeira √°rvore √© uma AVL, pois todos os n√≥s possuem sub√°rvores cuja diferen√ßa de altura n√£o ultrapassa 1
+     A segunda tamb√©m √© uma AVL, pois embora mais complexa, todos os n√≥s mant√™m o balanceamento, como no caso do n√≥ 60, cujos filhos (58 e 88) t√™m alturas 2 e 1,
+     diferen√ßa ainda v√°lida.
+     A terceira √°rvore √© apenas um n√≥ √© uma AVL por defini√ß√£o.
+     A terceira √°rvore n√£o √© uma AVL, pois o n√≥ 14 tem a sub√°rvore esquerda com altura 2 (13 -> 15) e a direita nula.
     */
 
     ArvAVL* avl;
@@ -61,7 +61,7 @@ int main(){
     printf("\n\n");
 
     /*
-        7) FaÁa uma funÁ„o que dada uma ·rvore verifica se a mesma È AVL
+        7) Fa√ßa uma fun√ß√£o que dada uma √°rvore verifica se a mesma √© AVL
     */
     if(verifica_AVL(avl)==0){
         printf("\nNao eh AVL :(\n");
@@ -69,14 +69,14 @@ int main(){
         printf("\nEh AVL :)\n");
     }
     /*
-        LÛgica usada: Percorre recursivamente a arvore atÈ o ˙ltimo elemento,
-        em cada elemento ela vai verificando se o balanÁo est· dentro dos padrıes
-        da arvore AVL, caso n„o esteja, retorna zero, caso chegue atÈ o final, retorna 1.
+        L√≥gica usada: Percorre recursivamente a arvore at√© o √∫ltimo elemento,
+        em cada elemento ela vai verificando se o balan√ßo est√° dentro dos padr√µes
+        da arvore AVL, caso n√£o esteja, retorna zero, caso chegue at√© o final, retorna 1.
     */
     libera_ArvAVL(avl);
     /*
-        8) FaÁa uma funÁ„o Arv* transforma(Arv *raiz) que dada uma ·rvore bin·ria
-        de busca qualquer, retorna uma nova ·rvore AVL.
+        8) Fa√ßa uma fun√ß√£o Arv* transforma(Arv *raiz) que dada uma √°rvore bin√°ria
+        de busca qualquer, retorna uma nova √°rvore AVL.
     */
     ArvAVL* arvore = cria_ArvAVL();
     for(i=0;i<N;i++){
@@ -98,8 +98,8 @@ int main(){
         printf("\nEh AVL :)\n");
     }
     /*
-    LÛgica usada: a ideia principal foi de criar uma arvore avl auxiliar,
-    depois a avore n„o avl foi percorrida e cada valor passado foi inserido
+    L√≥gica usada: a ideia principal foi de criar uma arvore avl auxiliar,
+    depois a avore n√£o avl foi percorrida e cada valor passado foi inserido
     na arvore avl auxiliar, ao final ela foi retornada.
     */
     libera_ArvAVL(arvore);

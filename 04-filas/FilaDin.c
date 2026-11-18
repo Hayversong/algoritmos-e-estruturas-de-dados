@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "FilaDin.h" //inclui os Protótipos
+#include "FilaDin.h" //inclui os ProtÃ³tipos
 
-//Definição do tipo Fila
+//DefiniÃ§Ã£o do tipo Fila
 struct elemento{
     struct aluno dados;
     struct elemento *prox;
 };
 typedef struct elemento Elem;
-//Definição do Nó Descritor da Fila
+//DefiniÃ§Ã£o do NÃ³ Descritor da Fila
 struct elemento2{
     Fila* dados2;
     struct elemento2 *prox2;

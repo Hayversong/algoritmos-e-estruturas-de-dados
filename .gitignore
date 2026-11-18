@@ -1,0 +1,20 @@
+# Binários e objetos
+*.exe
+*.o
+*.out
+bin/
+obj/
+output/
+
+# Arquivos do Code::Blocks gerados pela IDE
+*.depend
+*.layout
+
+# Python
+__pycache__/
+*.pyc
+temp_bloco_*.txt
+
+# Sistema
+.DS_Store
+Thumbs.db

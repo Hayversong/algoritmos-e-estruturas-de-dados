@@ -12,8 +12,8 @@ int main(){
     switch(escolha){
         case 4:{
         /*
-        4) Refaça as funções de inserir e remover no início e fim para que a lista
-            comporte-se de forma circular. No fim, faça uma função que para
+        4) RefaÃ§a as funÃ§Ãµes de inserir e remover no inÃ­cio e fim para que a lista
+            comporte-se de forma circular. No fim, faÃ§a uma funÃ§Ã£o que para
             percorrer a lista inteira utilizando o comportamento circular da mesma.
         */
         Lista* li = cria_lista();
@@ -34,34 +34,34 @@ int main(){
         libera_lista(li);
         break;
         /*
-        Lógica usada para inserir no início: o próximo do novo início
-        aponta para o antigo início, o anterior do novo início aponta
-        para o último, o próximo do último aponta para o novo início,
-        e o anteror do antigo início aponta para o novo início também.
+        LÃ³gica usada para inserir no inÃ­cio: o prÃ³ximo do novo inÃ­cio
+        aponta para o antigo inÃ­cio, o anterior do novo inÃ­cio aponta
+        para o Ãºltimo, o prÃ³ximo do Ãºltimo aponta para o novo inÃ­cio,
+        e o anteror do antigo inÃ­cio aponta para o novo inÃ­cio tambÃ©m.
         Logica usada para inserir no final: o proximo do novo final
-        aponta para o início, o anterior do novo final aponta para o
-        antigo final, o próximo do antigo final aponta para o novo
+        aponta para o inÃ­cio, o anterior do novo final aponta para o
+        antigo final, o prÃ³ximo do antigo final aponta para o novo
         final, e o anterior do inicio aponta para o novo final.
-        Lógica usada para remover no início:caso só tenha um elemento,
-        libera a lista, se não, o próximo do último aponta pro novo inicio,
+        LÃ³gica usada para remover no inÃ­cio:caso sÃ³ tenha um elemento,
+        libera a lista, se nÃ£o, o prÃ³ximo do Ãºltimo aponta pro novo inicio,
         o anterior do novo inicio aponta para o ultimo
-        Lógica usada para remover no final: caso só tenha um elemento,
-        libera a lista, se não, o proximo do anterior do último aponta
-        pro início,o anterior do inicio aponta para o novo ultimo.
-        Lógica usada pra imprimir: imprime os elementos até que chegue
+        LÃ³gica usada para remover no final: caso sÃ³ tenha um elemento,
+        libera a lista, se nÃ£o, o proximo do anterior do Ãºltimo aponta
+        pro inÃ­cio,o anterior do inicio aponta para o novo ultimo.
+        LÃ³gica usada pra imprimir: imprime os elementos atÃ© que chegue
         no primeiro elemento de novo.
         */
         }
         case 5:{
         /*
-        5) Faça uma estrutura do tipo Fila utilizando o conceito de lista duplamente
-            ou simplesmente encadeada, você pode escolher qual irá utilizar. É
-            preciso criar as funções Enfileirar e Desenfileirar. Essas funções devem
-            utilizar o conceito de nó descritor (nodesc), que é uma estrutura que
-            controla onde está a célula inicial da lista e a célula final, a inserção e
-            remoção na fila deve utilizar apenas os nós que estão na estrutura do nó
-            descritor. Abaixo segue as duas estruturas que serão usadas, a função
-            que inicializa o nó descritor e o cabeçalho das funções.
+        5) FaÃ§a uma estrutura do tipo Fila utilizando o conceito de lista duplamente
+            ou simplesmente encadeada, vocÃª pode escolher qual irÃ¡ utilizar. Ã‰
+            preciso criar as funÃ§Ãµes Enfileirar e Desenfileirar. Essas funÃ§Ãµes devem
+            utilizar o conceito de nÃ³ descritor (nodesc), que Ã© uma estrutura que
+            controla onde estÃ¡ a cÃ©lula inicial da lista e a cÃ©lula final, a inserÃ§Ã£o e
+            remoÃ§Ã£o na fila deve utilizar apenas os nÃ³s que estÃ£o na estrutura do nÃ³
+            descritor. Abaixo segue as duas estruturas que serÃ£o usadas, a funÃ§Ã£o
+            que inicializa o nÃ³ descritor e o cabeÃ§alho das funÃ§Ãµes.
         */
         noDesc fila = NULL;
         inicializa_noDesc(&fila);
@@ -76,14 +76,14 @@ int main(){
         desenfileirar(&fila, &elemento);
         imprime_fila(fila);
         /*
-        Lógica usada para enfileirar: caso a fila esteja vazia,
+        LÃ³gica usada para enfileirar: caso a fila esteja vazia,
         o novo no se torna o inicio e o fim, caso ja tenhha
         elementos, o anterior do novo no aponta pro antigo final,
         o proximo do antigo final para para o novo no.
-        Lógica usada para desinfileirar: caso só tenha um único
-        elemento, o início e o fim são setados como NULL, caso
+        LÃ³gica usada para desinfileirar: caso sÃ³ tenha um Ãºnico
+        elemento, o inÃ­cio e o fim sÃ£o setados como NULL, caso
         ja tenha elementos, o inicio aponta para o proximo e o
-        anterior desse proximo é setado como NULL
+        anterior desse proximo Ã© setado como NULL
         */
         break;
         }

@@ -4,7 +4,7 @@
 
 #include "matriz.h"
 
-// declaração da variável global raiz_do_sistema que ta na matriz.c
+// declaraÃ§Ã£o da variÃ¡vel global raiz_do_sistema que ta na matriz.c
 extern No *raiz_do_sistema;
 
 int main() {
@@ -43,7 +43,7 @@ int main() {
         char *cmd_token = strtok(comando, " ");
         char *arg_token = strtok(NULL, ""); // pega o resto da linha como argumento
 
-        // converte o comando para minúsculas para facilitar a comparação
+        // converte o comando para minÃºsculas para facilitar a comparaÃ§Ã£o
         if (cmd_token != NULL) {
             for (char *p = cmd_token; *p; ++p) *p = tolower(*p);
         }

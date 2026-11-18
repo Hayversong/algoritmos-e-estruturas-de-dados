@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ListaDinEncadDupla.h" //inclui os Protótipos
+#include "ListaDinEncadDupla.h" //inclui os ProtÃ³tipos
 
-//Definição do tipo lista
+//DefiniÃ§Ã£o do tipo lista
 struct elemento{
     struct elemento *ant;
     struct aluno dados;
@@ -80,7 +80,7 @@ int insere_lista_final(Lista* li, struct aluno al){
         return 0;
     no->dados = al;
     no->prox = NULL;
-    if((*li) == NULL){//lista vazia: insere início
+    if((*li) == NULL){//lista vazia: insere inÃ­cio
         no->ant = NULL;
         *li = no;
     }else{
@@ -105,7 +105,7 @@ int insere_lista_inicio(Lista* li, struct aluno al){
     no->dados = al;
     no->prox = (*li);
     no->ant = NULL;
-    if(*li != NULL)//lista não vazia: apontar para o anterior!
+    if(*li != NULL)//lista nÃ£o vazia: apontar para o anterior!
         (*li)->ant = no;
     *li = no;
     return 1;
@@ -136,7 +136,7 @@ int remove_lista_final(Lista* li){
     while(no->prox != NULL)
         no = no->prox;
 
-    if(no->ant == NULL)//remover o primeiro e único
+    if(no->ant == NULL)//remover o primeiro e Ãºnico
         *li = no->prox;
     else
         no->ant->prox = NULL;
@@ -216,7 +216,7 @@ int insere_lista_final_circular(Lista* li, struct aluno al){
     if(no == NULL)
         return 0;
     no->dados = al;
-    if(*li == NULL){ //lista vazia: insere início
+    if(*li == NULL){ //lista vazia: insere inÃ­cio
         no->prox = no;
         no->ant = no;
         *li = no;
@@ -319,7 +319,7 @@ int desenfileirar(noDesc *n, int *elem) {
     struct fila *remover = (*n)->ini;
     *elem = remover->info;
 
-    if ((*n)->ini == (*n)->fim) { // só um elemento
+    if ((*n)->ini == (*n)->fim) { // sÃ³ um elemento
         (*n)->ini = NULL;
         (*n)->fim = NULL;
     } else {

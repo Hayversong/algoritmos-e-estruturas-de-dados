@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ArvoreAVL.h" //inclui os Protótipos
+#include "ArvoreAVL.h" //inclui os ProtÃ³tipos
 
 struct NO{
     int info;
@@ -28,7 +28,7 @@ void libera_NO(struct NO* no){
 void libera_ArvAVL(ArvAVL* raiz){
     if(raiz == NULL)
         return;
-    libera_NO(*raiz);//libera cada nó
+    libera_NO(*raiz);//libera cada nÃ³
     free(raiz);//libera a raiz
 }
 
@@ -166,7 +166,7 @@ void RotacaoRL(ArvAVL *raiz){//RL
 
 int insere_ArvAVL(ArvAVL *raiz, int valor){
     int res;
-    if(*raiz == NULL){//árvore vazia ou nó folha
+    if(*raiz == NULL){//Ã¡rvore vazia ou nÃ³ folha
         struct NO *novo;
         novo = (struct NO*)malloc(sizeof(struct NO));
         if(novo == NULL)
@@ -224,8 +224,8 @@ struct NO* procuraMenor(struct NO* atual){
 }
 
 int remove_ArvAVL(ArvAVL *raiz, int valor){
-	if(*raiz == NULL){// valor não existe
-	    printf("valor não existe!!\n");
+	if(*raiz == NULL){// valor nÃ£o existe
+	    printf("valor nÃ£o existe!!\n");
 	    return 0;
 	}
 
@@ -253,14 +253,14 @@ int remove_ArvAVL(ArvAVL *raiz, int valor){
 	}
 
 	if((*raiz)->info == valor){
-	    if(((*raiz)->esq == NULL || (*raiz)->dir == NULL)){// nó tem 1 filho ou nenhum
+	    if(((*raiz)->esq == NULL || (*raiz)->dir == NULL)){// nÃ³ tem 1 filho ou nenhum
 			struct NO *oldNode = (*raiz);
 			if((*raiz)->esq != NULL)
                 *raiz = (*raiz)->esq;
             else
                 *raiz = (*raiz)->dir;
 			free(oldNode);
-		}else { // nó tem 2 filhos
+		}else { // nÃ³ tem 2 filhos
 			struct NO* temp = procuraMenor((*raiz)->dir);
 			(*raiz)->info = temp->info;
 			remove_ArvAVL(&(*raiz)->dir, (*raiz)->info);
@@ -290,7 +290,7 @@ int verifica_AVL(ArvAVL *raiz){
 
 int insere_Arv(ArvAVL *raiz, int valor){
     int res;
-    if(*raiz == NULL){//árvore vazia ou nó folha
+    if(*raiz == NULL){//Ã¡rvore vazia ou nÃ³ folha
         struct NO *novo;
         novo = (struct NO*)malloc(sizeof(struct NO));
         if(novo == NULL)
@@ -328,7 +328,7 @@ int insere_Arv(ArvAVL *raiz, int valor){
 ArvAVL* transforma(ArvAVL *raiz){
     if(raiz == NULL) return NULL;
     ArvAVL* avl = cria_ArvAVL();
-    transforma2(*raiz, avl); // *raiz é um ponteiro para struct NO
+    transforma2(*raiz, avl); // *raiz Ã© um ponteiro para struct NO
     return avl;
 }
 

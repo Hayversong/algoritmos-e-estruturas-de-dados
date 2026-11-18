@@ -17,10 +17,10 @@ int main(){
     switch(escolha){
         case 5:{
             /*
-            Receba um número inteiro não negativo e faça uma função que percorra
-            a lista e remova todos os nós que contiverem esse número inteiro
-            armazenado neles. Faça todas as condições de controle necessárias
-            para as remoções sejam corretas.
+            Receba um nÃºmero inteiro nÃ£o negativo e faÃ§a uma funÃ§Ã£o que percorra
+            a lista e remova todos os nÃ³s que contiverem esse nÃºmero inteiro
+            armazenado neles. FaÃ§a todas as condiÃ§Ãµes de controle necessÃ¡rias
+            para as remoÃ§Ãµes sejam corretas.
             */
             ListaInt* l1 = cria_lista_int();
             for(int i = 0; i < 5; i++){
@@ -42,14 +42,14 @@ int main(){
             libera_lista_int(l1);
             break;
             /*
-            Lógica usada: Adaptei os métodos anteriores para que a lista recebe inteiros ao invés de alunos,
-            a única diferente foi a de remoção, que ao invés de remover o primeiro elemento igual ao passado,
-            usei um nó auxiliar para que fossem removidos todos elementos que fossem iguais ao passado,
+            LÃ³gica usada: Adaptei os mÃ©todos anteriores para que a lista recebe inteiros ao invÃ©s de alunos,
+            a Ãºnica diferente foi a de remoÃ§Ã£o, que ao invÃ©s de remover o primeiro elemento igual ao passado,
+            usei um nÃ³ auxiliar para que fossem removidos todos elementos que fossem iguais ao passado,
             */
         }
         case 6:{
             /*
-            Escrever uma função para concatenar duas listas encadeadas L1 e L2.
+            Escrever uma funÃ§Ã£o para concatenar duas listas encadeadas L1 e L2.
             */
             Lista* l1 = cria_lista();
             Lista* l2 = cria_lista();
@@ -67,13 +67,13 @@ int main(){
             libera_lista(l1);
             libera_lista(l2);
             /*
-            Lógica usada: apenas inseri os dados da lista 2 no final da Lista 1
+            LÃ³gica usada: apenas inseri os dados da lista 2 no final da Lista 1
             */
             break;
         }
         case 7:{
             /*
-            Escrever uma função para remover elementos repetidos de uma lista encadeada.
+            Escrever uma funÃ§Ã£o para remover elementos repetidos de uma lista encadeada.
             */
             Lista* l1 = cria_lista();
             for(int i=0; i < 3; i++){
@@ -89,18 +89,18 @@ int main(){
             libera_lista(l1);
             break;
             /*
-            Lógicas usada: Foi usado um nó auxiliar que pra cada nó vai percorrer todos os outros nós, comparando cada elemento,
-            por exemplo, o primeiro nó é o aluno 1, o auxiliar vai percorrer a lista inteira comparando nó por nó, toda vez que o
-            nó é igual ao auxiliar, a variável cont recebe +1, e como o valor de aux inicia com o do nó, o esperado é que cont
-            termine com 1, toda vez que cont passar desse valor, significa que há um valor repetido, então quando isso acontece,
-            é chamada a função de remoção e o cont é zerado.
+            LÃ³gicas usada: Foi usado um nÃ³ auxiliar que pra cada nÃ³ vai percorrer todos os outros nÃ³s, comparando cada elemento,
+            por exemplo, o primeiro nÃ³ Ã© o aluno 1, o auxiliar vai percorrer a lista inteira comparando nÃ³ por nÃ³, toda vez que o
+            nÃ³ Ã© igual ao auxiliar, a variÃ¡vel cont recebe +1, e como o valor de aux inicia com o do nÃ³, o esperado Ã© que cont
+            termine com 1, toda vez que cont passar desse valor, significa que hÃ¡ um valor repetido, entÃ£o quando isso acontece,
+            Ã© chamada a funÃ§Ã£o de remoÃ§Ã£o e o cont Ã© zerado.
             */
         }
         case 8:{
             /*
-            Escrever um procedimento para fazer a fusão de duas listas encadeadas
-            ordenadas, mantendo-a ordenada. Não devem ser alocados (criados)
-            nós extras. Os nós serão religados para compor a nova lista ordenada.
+            Escrever um procedimento para fazer a fusÃ£o de duas listas encadeadas
+            ordenadas, mantendo-a ordenada. NÃ£o devem ser alocados (criados)
+            nÃ³s extras. Os nÃ³s serÃ£o religados para compor a nova lista ordenada.
             */
             Lista* l1 = cria_lista();
             Lista* l2 = cria_lista();
@@ -118,19 +118,19 @@ int main(){
             libera_lista(l1);
             libera_lista(l2);
             /*
-            Lógica usada: apenas inseri os dados da lista 2 na lista 1 usando a função insere_lista_ordenada
+            LÃ³gica usada: apenas inseri os dados da lista 2 na lista 1 usando a funÃ§Ã£o insere_lista_ordenada
             */
             break;
         }
         case 9:{
             /*
-            Considere a implementação de listas encadeadas. Escreva um
+            Considere a implementaÃ§Ã£o de listas encadeadas. Escreva um
             procedimento Troca(TipoLista* pLista, TipoCelula* p) que, dado um
-            apontador para uma célula qualquer (p), troca de posição essa célula
-            com a sua célula seguinte da lista, como mostrado na figura abaixo.
-            (Obs. Não vale trocar apenas o campo item! Você deverá fazer a
-            manipulação dos apontadores para trocar as duas células de posição).
-            Não esqueça de tratar os casos especiais.
+            apontador para uma cÃ©lula qualquer (p), troca de posiÃ§Ã£o essa cÃ©lula
+            com a sua cÃ©lula seguinte da lista, como mostrado na figura abaixo.
+            (Obs. NÃ£o vale trocar apenas o campo item! VocÃª deverÃ¡ fazer a
+            manipulaÃ§Ã£o dos apontadores para trocar as duas cÃ©lulas de posiÃ§Ã£o).
+            NÃ£o esqueÃ§a de tratar os casos especiais.
             */
             Lista* l1 = cria_lista();
             for(int i=0; i < 5; i++){
@@ -145,10 +145,10 @@ int main(){
             imprime_lista(l1);
             libera_lista(l1);
             /*
-            Lógica usada:primeiro ela verifica o caso especial (ser logo a primeira),
-            faz a troca normal usando um auxiliar, caso não seja logo a primeira,
-            ela percorre a lista inteira em busca da matricula, caso não ache ou a
-            matricula é a última, retorna zero, mas caso ache antes disso ela troca
+            LÃ³gica usada:primeiro ela verifica o caso especial (ser logo a primeira),
+            faz a troca normal usando um auxiliar, caso nÃ£o seja logo a primeira,
+            ela percorre a lista inteira em busca da matricula, caso nÃ£o ache ou a
+            matricula Ã© a Ãºltima, retorna zero, mas caso ache antes disso ela troca
             com a proxima, fazendo uso da auxiliar, ajustando os ponteiros do anterior,
              atual e proximo.
             */
